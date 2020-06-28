@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Сайт-портфолио дизайнера Павла Булавского. Разработка дизайна сайтов, приложений, логотипов, айдентики и фирменных стилей" />
   <meta name="keywords" content="apps, дизайн сайтов, верстка сайтов, html, css, веб-дизайн, UI/UX, web design" />
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -12,13 +13,13 @@
   <title>Дизайн и верстка сайтов. Булавский Павел</title>
 </head>
 <body>
-  <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <div>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
           <a class="navbar-brand" href="#">Дизайн и верстка сайтов</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active"><a class="nav-link" href="#">Главная</a></li>
@@ -28,43 +29,61 @@
             </ul>
           </div>
       </nav>
-    <section class="about">
+      <section class="bg container-fluid">
+        <h1 class="display-1">Павел <br>Булавский</h1>
+        <p class="h3">Веб-программист, дизайнер // 25 лет // Минск</p>
+        <p class="lead mt-3 w-75">Разработка дизайна сайтов с учетом целевой аудитории, принципов юзабилити
+          и требуемых задач </p>
+          <a href="mailto:bulauskipavel@gmail.com" class="btn btn-lg mb-3 btn-secondary" role="button" aria-pressed="true">Написать мне</a>
+      </section>
+    </div>
+    <section class="goals pt-3 container-fluid">
+      <h2 class="mb-4 display-4">Чем занимаюсь</h2>
       <div class="row">
-        <div class="about__photo"><img src="img/my-face.jpg" alt="Vadik Matveev" /></div>
-        <div class="about__me">
-          <h2 class="h2">Коротко о себе</h2>
-          <ul class="about__link">
-            <li>Резюме</li>
-            <li>Проекты</li>
-            <li>Навыки</li>
+        <div class="col">
+          <h3>Разработка сайтов</h3>
+          <p class="text-justify">Индивидуальный подход под Ваши бизнес задачи. Дизайн и верстка на основе готового прототипа
+            или Вашего тех.&nbsp;задания.
+            Адаптивность сайтов для различных устройств.</p>
+        </div>
+        <div class="col">
+          <h3>Редизайн сайтов</h3>
+          <p class="text-justify">Разработка нового дизайна
+            для морально устаревших сайтов.
+            Для сайтов, требующих расширения функционала. Для сайтов, изначально спроектированых неверно.</p>
+        </div>
+      </div>
+    </section>
+    <section class="about container-fluid">
+      <h2 class="display-4 mb-2">Коротко о себе</h2>
+      <div class="row align-items-center">
+        <div class="col-md-3"><img src="img/my-face.png" class="img-fluid" alt="Pavel Bulavski" /></div>
+        <div class="single-post col-md-9 mt-3">
+          <ul class="btn-group-toggle pl-0">
+            <li class="btn btn-outline-secondary">Резюме</li>
+            <li class="btn btn-outline-secondary">Проекты</li>
+            <li class="btn btn-outline-secondary">Навыки</li>
           </ul>
-          <p class="about__flow">Проектирую сайты, логотипы и&nbsp;фирменные стили. Часто сам верстаю разработанные веб-проекты. Учился в БНТУ на кафедре машиностроения на инженера технолога. Проходил курсы по&nbsp;основам Javascript от rssschool в&nbsp;2019 году. Знаю HTML и&nbsp;CSS.
-            Осваиваиваю JavaScript. С начал 2017&nbsp;года работал на фриланс бирже fl.ru дизайнером сайтов, логотипов. Создавал дизайн для заказчиков из разных стран, в том числе за территорией СНГ. Создавал сайты-визитки, корпоративные сайты, сервисы, лендинги, графический дизайн.
+          <p class="text-justify">Проектирую сайты, логотипы и&nbsp;фирменные стили. Часто сам верстаю разработанные веб-проекты. Учился в БНТУ на кафедре машиностроения на инженера технолога. Проходил курсы по&nbsp;основам Javascript от rssschool в&nbsp;2019 году. Знаю HTML и&nbsp;CSS.
+            Осваиваиваю JavaScript. С начал 2017&nbsp;года работаю на фриланс бирже fl.ru дизайнером сайтов, логотипов. Создавал дизайн для заказчиков из разных стран, в том числе за территорией СНГ. Создавал сайты-визитки, корпоративные сайты, лендинги, логотипы, фирменный стиль.
             Считаю, что сайт должен выполнять поставленные задачи, быть удобен и эстетичен. Поэтому при проектировании дизайна, особое внимание уделяю структуре и логике взаимодействия.
             Люблю понятные интерфейсы, поэтому предпочитаю минимализм.
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="likely-inner col-xs-12 col-md-6 col-md-push-6"><span class="share">Поделиться </span>
-            <div class="likely likely-big">
-              <div data-via="fooontic_" class="twitter"></div>
-              <div class="facebook"></div>
-              <div class="vkontakte"></div>
-              <div data-text="Зацени-ка" class="telegram"></div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-md-pull-6">
+    <footer class="footer container-fluid pt-3 pb-3">
+      <div>
+        <div class="row align-items-center">
+          <div class="col-8">
             <div class="footer__copyright">© 2020</div>
             <div class="footer__mail">Пишите мне на <a class="link">bulavskipavel@gmail.com</a></div>
+          </div>
+          <div class="col-4"><span class="share">Поделиться</span>
           </div>
         </div>
       </div>
     </footer>
   </div>
-
-
+  <script src="script.js"></script>
 </body>
 </html>

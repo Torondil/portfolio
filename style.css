@@ -1,0 +1,16 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  background-image:url(./img/ice-frozen-lake-3367931.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+a.btn-secondary {
+  background-color: transparent;
+}
