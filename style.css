@@ -14,3 +14,17 @@ body, html {
 a.btn-secondary {
   background-color: transparent;
 }
+
+.share-item {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.share-list {
+  font-size: 1.3rem;
+}
+
+.share-item a {
+  color: #6F9AAA;
+}
